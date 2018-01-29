@@ -1,0 +1,28 @@
+main{
+  background-color: lightgray;
+  align-content: center;
+  text-align: center;
+}
+h1{
+  padding: 25px;
+}
+input{
+  width: 50%;
+  height: 25px;
+}
+button{
+  margin: 15px;
+  height: 50px;
+  width: 250px;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  font-size: large;
+  border: none;
+}
+button:hover{
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+button:active{
+  background-color: darkslateblue;
+}

@@ -1,0 +1,15 @@
+<main>
+<h1>Kirjoita pysäkin nimi hakuboksiin</h1>
+<!--
+<h2>
+    Pysäkin nimi
+</h2>
+
+<form name="stop">
+    <input type="text" placeholder="Tikkurila" (keyup)="stopName($event)">
+</form>-->
+
+<input placeholder="MOI:-)" name="nimi" [(ngModel)] = "digitransitService.pysakki">
+    <br>
+<button (click)="naytaPysakki()">hae</button>
+</main>

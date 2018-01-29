@@ -1,0 +1,9 @@
+<h1> Klikkaa paikan nimeä nähdäksesi kartalla</h1>
+<ul>
+    <li *ngFor="let stop of output">
+        <a (click)="maps(stop['lat'] , stop['lon'])"> {{stop['name']}}</a>
+        <!--    <p>{{stop['lon']}}</p>
+            <p>{{stop['lat']}}</p> -->
+        <p>{{stop['desc']}}</p>
+    </li>
+</ul>
