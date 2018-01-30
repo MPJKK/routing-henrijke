@@ -14,6 +14,7 @@ import {CommonModule} from '@angular/common';
 
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
+import { RouteDirectionPipe } from './pipe/route-direction.pipe';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MapComponent } from './map/map.component';
     RoutesComponent,
     SetupComponent,
     TopBarComponent,
-    MapComponent
+    MapComponent,
+    RouteDirectionPipe
   ],
   imports: [
     BrowserModule,

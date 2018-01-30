@@ -18,6 +18,10 @@ export class DigitransitService {
     lat
     lon
     desc
+    patterns {
+    directionId
+    name
+    }
   }
 }`;
 

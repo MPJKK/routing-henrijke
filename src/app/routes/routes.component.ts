@@ -20,6 +20,7 @@ export class RoutesComponent implements OnInit {
         this.digitransitService.getRoutes().subscribe( response => {
             this.output = response.data['stops'];
             console.log(response.data['stops'][0]);
+            console.log(response.data['stops'][0]['patterns'][0].directionId);
         });
     }
     maps(lat, lon) {

@@ -1,20 +1,49 @@
 
-li{
-  list-style-type: none;
+article{
+  text-align: center;
 }
 ul{
-  background-color: darkgrey;
+  list-style-type: none;
 
 }
+.mainLi{
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  margin-left:35%;
+  margin-right:35%;
+
+}
+
+.nimi{
+  font-size: 125%;
+  padding-bottom:10px;
+}
+.bussi{
+  padding-top:10px;
+  padding-bottom: 10px;
+}
 a{
-  color: white;
+  color: darkgrey;
   text-decoration: none;
   font-size: 125%;
-  font-family: Arial, serif;
+
 }
-li:hover{
+
+.desc{
+  display: none;
+  font-size: 0;
+  color: darkgrey;
+
+}
+.mainList li:hover{
   a{
     color: lightgrey;
     cursor: pointer;
   }
+  .desc{
+  display: inline-block;
+    font-size: 100%;
+  }
 }
+

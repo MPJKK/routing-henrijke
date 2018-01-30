@@ -1,9 +1,18 @@
+<article>
 <h1> Klikkaa paikan nimeä nähdäksesi kartalla</h1>
-<ul>
-    <li *ngFor="let stop of output">
-        <a (click)="maps(stop['lat'] , stop['lon'])"> {{stop['name']}}</a>
+<ul class="mainList">
+    <li class="mainLi" *ngFor="let stop of output">
+        <a (click)="maps(stop['lat'] , stop['lon'])"><i class="material-icons">location_on</i> {{stop['name']}}
         <!--    <p>{{stop['lon']}}</p>
             <p>{{stop['lat']}}</p> -->
-        <p>{{stop['desc']}}</p>
+
+        <ul class="desc">
+            <li class="nimi" >{{stop['desc']}}</li>
+            <li class="bussi" *ngFor="let buss of stop['patterns']">
+                {{buss.directionId | routeDirection}} {{buss.name}}
+            </li>
+        </ul>
+        </a>
     </li>
 </ul>
+</article>

@@ -1,7 +1,8 @@
 main{
-  background-color: lightgray;
   align-content: center;
   text-align: center;
+  padding:0;
+  margin:0;
 }
 h1{
   padding: 25px;
@@ -9,6 +10,7 @@ h1{
 input{
   width: 50%;
   height: 25px;
+  font-size: larger;
 }
 button{
   margin: 15px;
@@ -19,6 +21,7 @@ button{
   font-size: large;
   border: none;
 }
+
 button:hover{
   background-color: lightskyblue;
   cursor: pointer;

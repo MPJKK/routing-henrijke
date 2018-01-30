@@ -1,4 +1,10 @@
 div{
-  background-color: darkgrey;
   height: 100vh;
+  margin: 0;
+  padding:0;
+}
+app-setup,app-top-bar,router-outlet{
+  margin: 0;
+  padding:0;
+
 }

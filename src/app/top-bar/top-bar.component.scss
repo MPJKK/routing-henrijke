@@ -1,16 +1,26 @@
 
 nav{
-  background-color: lightblue;
+  background-color: whitesmoke;
+  margin: 0;
+  padding:0;
+
+}
+ul{
+  list-style-type: none;
+  padding-top:20px;
+  padding-bottom:20px;
+
+  overflow: hidden;
 }
 li{
-  list-style-type: none;
+  float: left;
   padding: 5px;
+  padding-right: 40px;
 }
 a{
-  color: white;
+  color: darkgrey;
   text-decoration: none;
   font-size: 125%;
-  font-family: Arial, serif;
 }
 li:hover{
   a{
