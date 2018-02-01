@@ -11,14 +11,6 @@ export class TopBarComponent implements OnInit {
     constructor(private router: Router) {
         this.router.navigate(['setup']);
     }
-    navLinks = [{
-        path: 'setup',
-        label: 'Setup'
-    },
-        {
-            path: 'routers',
-            label: 'Routers'
-        }];
 
     ngOnInit() {
     }

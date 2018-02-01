@@ -2,6 +2,14 @@
 
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
-<agm-map [latitude]="digitransitService.lat" [longitude]="digitransitService.lon">
-  <agm-marker [latitude]="digitransitService.lat" [longitude]="digitransitService.lon"></agm-marker>
-</agm-map>
+<div fxLayout="row">
+  <div fxFlex="50">
+    <app-routes class="smallList"></app-routes>
+  </div>
+  <div fxFlex="50">
+    <agm-map [latitude]="digitransitService.lat" [longitude]="digitransitService.lon">
+      <agm-marker [latitude]="digitransitService.lat" [longitude]="digitransitService.lon"></agm-marker>
+    </agm-map>
+
+  </div>
+</div>

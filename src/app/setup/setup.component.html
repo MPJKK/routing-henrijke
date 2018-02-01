@@ -17,4 +17,13 @@
 <input placeholder="MOI:-)" name="nimi" [(ngModel)] = "digitransitService.pysakki">
     <br>
 <button (click)="naytaPysakki()"><i class="material-icons">search</i></button>
+<br>
+    <h2>Angular nappula jutut</h2>
+    <br>
+    <mat-form-field>
+        <input matInput (ngModel) = "digitransitService.pysakki" placeholder="Stop name">
+    </mat-form-field>
+    <button mat-raised-button color='primary' (click)="naytaPysakki()"><i class="material-icons">search</i></button>
 </main>
+
+

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router, Routes} from '@angular/router';
 import {DigitransitService} from '../services/digitransit.service';
 
+
 @Component({
     selector: 'app-routes',
     templateUrl: './routes.component.html',
@@ -10,9 +11,6 @@ import {DigitransitService} from '../services/digitransit.service';
 
 
 export class RoutesComponent implements OnInit {
-
-    lat;
-    lon;
     output;
     constructor(public digitransitService: DigitransitService, private router: Router) {
     }
