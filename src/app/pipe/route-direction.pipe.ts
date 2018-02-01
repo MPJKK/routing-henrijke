@@ -6,10 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class RouteDirectionPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    if(value==0){
-      return 'Tulo';
-    }else{
-      return 'Meno';
+    if(value == 0){
+      return 'arrow_back';
+    }else {
+      return 'arrow_forward';
     }
   }
 

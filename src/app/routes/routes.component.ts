@@ -25,8 +25,6 @@ export class RoutesComponent implements OnInit {
         this.digitransitService.lat = lat;
         this.digitransitService.lon = lon;
         this.router.navigate([`map`]);
-
-
     }
     ngOnInit() {
         this.route();

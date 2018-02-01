@@ -14,7 +14,7 @@ export class SetupComponent implements OnInit {
 
     naytaPysakki() {
         console.log(this.digitransitService.pysakki);
-        this.router.navigate(['routes']);
+        this.router.navigate(['map']);
     }
 
     ngOnInit() {

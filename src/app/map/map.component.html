@@ -1,7 +1,8 @@
 <h1>{{ title }}</h1>
 
 <!-- this creates a google map on the page with the given lat/lng from -->
-<!-- the component as the initial center of the map: -->
+<!-- the component as the initial center of the map:
+
 <div fxLayout="row">
   <div fxFlex="50">
     <app-routes class="smallList"></app-routes>
@@ -13,3 +14,36 @@
 
   </div>
 </div>
+-->
+
+<article *ngFor="let stop of output">
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{stop.name}}
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div fxLayout="row" class="mat-expansion-panel-body">
+            <div fxFlex="50">
+                <i class="material-icons">location_on</i> {{stop['name']}}
+                    <ul class="desc">
+                        <li class="nimi">{{stop['desc']}}</li>
+                        <li class="bussi" *ngFor="let buss of stop['patterns']">
+                            <i class="material-icons">{{buss.directionId | routeDirection}}</i> {{buss.name}}
+                        </li>
+                    </ul>
+
+            </div>
+            <div fxFlex="50">
+                <agm-map [latitude]="stop['lat']" [longitude]="stop['lon']">
+                    <agm-marker [latitude]="stop['lat']" [longitude]="stop['lon']"></agm-marker>
+                </agm-map>
+
+            </div>
+        </div>
+
+    </mat-expansion-panel>
+</article>
+

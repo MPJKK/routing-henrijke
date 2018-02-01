@@ -10,10 +10,11 @@ const routes: Routes = [
         pathMatch: 'full',
         redirectTo: 'example',
     },
+    /*
     {
         path: 'routes',
         component: RoutesComponent
-    },
+    },*/
     {
         path: 'setup',
         component: SetupComponent

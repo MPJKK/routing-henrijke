@@ -15,8 +15,9 @@ import {CommonModule} from '@angular/common';
 import {AgmCoreModule} from '@agm/core';
 import {MapComponent} from './map/map.component';
 import {RouteDirectionPipe} from './pipe/route-direction.pipe';
-import {MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatInputModule, MatTabsModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatExpansionModule, MatFormFieldModule, MatInputModule, MatTabsModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
         MatTabsModule,
         MatInputModule,
         MatFormFieldModule,
-        MatButtonModule,
+        MatExpansionModule,
+        BrowserAnimationsModule,
         AgmCoreModule.forRoot({
             apiKey: ' AIzaSyCqkk-YbDuO_-eL1I6SOUrEudyZVkUVBzo '
 

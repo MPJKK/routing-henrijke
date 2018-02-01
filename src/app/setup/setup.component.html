@@ -1,9 +1,9 @@
 <main>
-<h1>
+<h2>
     <i class="material-icons">directions_bus</i>
     Kirjoita pysäkin nimi hakuboksiin
     <i class="material-icons">directions_bus</i>
-</h1>
+</h2>
 
 <!--
 <h2>
@@ -13,16 +13,17 @@
 <form name="stop">
     <input type="text" placeholder="Tikkurila" (keyup)="stopName($event)">
 </form>-->
-
+<!--
 <input placeholder="MOI:-)" name="nimi" [(ngModel)] = "digitransitService.pysakki">
     <br>
 <button (click)="naytaPysakki()"><i class="material-icons">search</i></button>
 <br>
-    <h2>Angular nappula jutut</h2>
+-->
     <br>
     <mat-form-field>
-        <input matInput (ngModel) = "digitransitService.pysakki" placeholder="Stop name">
+        <input matInput [(ngModel)] = "digitransitService.pysakki" placeholder="Stop name">
     </mat-form-field>
+    <br>
     <button mat-raised-button color='primary' (click)="naytaPysakki()"><i class="material-icons">search</i></button>
 </main>
 

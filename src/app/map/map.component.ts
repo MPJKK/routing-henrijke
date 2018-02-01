@@ -11,9 +11,21 @@ export class MapComponent implements OnInit {
 
   constructor(public digitransitService: DigitransitService, private router: Router) { }
     title = ' Jee toimii!';
-
-  ngOnInit() {
-    console.log(this.digitransitService.lat + ' ' + this.digitransitService.lon);
-  }
+  output;
+    route() {
+        this.digitransitService.getRoutes().subscribe( response => {
+            this.output = response.data['stops'];
+            console.log(response.data['stops'][0]);
+            console.log(response.data['stops'][0]['patterns'][0].directionId);
+        });
+    }
+    maps(lat, lon) {
+        this.digitransitService.lat = lat;
+        this.digitransitService.lon = lon;
+        this.router.navigate([`map`]);
+    }
+    ngOnInit() {
+        this.route();
+    }
 
 }
